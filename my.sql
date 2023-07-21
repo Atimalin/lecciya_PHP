@@ -1,0 +1,14 @@
+CREATE TABLE student (id SERIAL NOT NULL, name VARCHAR(100) NOT NULL, age INTEGER NOT NULL, address VARCHAR(100) NOT NULL);
+INSERT INTO student (name, age, address) VALUES ("Артём", 27, "Челябинск");
+INSERT INTO student(name, age, address) VALUES("Анна", 29, "Москва");
+INSERT INTO student(name, age, address) VALUES("Александр", 37, "Воронеж");
+INSERT INTO student(name, age, address) VALUES("Ольга", 22, "Москва");
+INSERT INTO student(name, age, address) VALUES("Владимир", 24, "Копейск");
+INSERT INTO student(name, age, address) VALUES("Алифтина", 34, "Челябинск");
+INSERT INTO student(name, age, address) VALUES("Света", 41, "Москва");
+INSERT INTO student(name, age, address) VALUES("Владислав", 18, "Сочи");
+INSERT INTO student(name, age, address) VALUES("Екатерина", 25, "Челябинск");
+INSERT INTO student(name, age, address) VALUES("Софья", 37, "Челябинск");
+INSERT INTO student(name, age, address) VALUES("Гузель", 28, "Омск");
+INSERT INTO student(name, age, address) VALUES("Олег", 18, "Москва");
+SELECT name FROM student WHERE address = "Москва" AND age >= 18 AND age < 30; 
